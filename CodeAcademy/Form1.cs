@@ -17,23 +17,30 @@ namespace CodeAcademy
             InitializeComponent();
         }
 
-       
-
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void admin_Click(object sender, EventArgs e)
         {
-            if(username.Text == "admin" && password.Text == "admin")
-            {
-                Main main = new Main();
-                main.ShowDialog();
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Your password or username incorrect");
-            }
-            
-           
-
+            Admin_Enter admin = new Admin_Enter();
+            admin.ShowDialog();
         }
+
+        private void teacher_Click(object sender, EventArgs e)
+        {
+            TeacherLogin login = new TeacherLogin();
+            login.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Mentor_Register mentor_Register = new Mentor_Register();
+            mentor_Register.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Student_Register student_Register = new Student_Register();
+            student_Register.ShowDialog();
+        }
+
+        
     }
 }

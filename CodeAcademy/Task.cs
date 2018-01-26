@@ -26,5 +26,6 @@ namespace CodeAcademy
     
         public virtual Student Student { get; set; }
         public virtual Task_types Task_types { get; set; }
+        public virtual Group Group { get; set; }
     }
 }

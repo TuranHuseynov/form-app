@@ -28,78 +28,133 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.username = new System.Windows.Forms.TextBox();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.password = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.teacher = new System.Windows.Forms.Button();
+            this.admin = new System.Windows.Forms.Button();
+            this.code = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // username
+            // button3
             // 
-            this.username.Location = new System.Drawing.Point(327, 103);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(100, 20);
-            this.username.TabIndex = 0;
+            this.button3.BackColor = System.Drawing.Color.LightGray;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Cambria", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Brown;
+            this.button3.Location = new System.Drawing.Point(110, 442);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(158, 52);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Student";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // btnLogin
+            // button2
             // 
-            this.btnLogin.Location = new System.Drawing.Point(389, 188);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Login";
-            this.btnLogin.UseVisualStyleBackColor = true;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Cambria", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Brown;
+            this.button2.Location = new System.Drawing.Point(569, 442);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(158, 52);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Mentor";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // password
+            // teacher
             // 
-            this.password.Location = new System.Drawing.Point(327, 129);
-            this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(100, 20);
-            this.password.TabIndex = 0;
+            this.teacher.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.teacher.BackColor = System.Drawing.Color.Silver;
+            this.teacher.FlatAppearance.BorderColor = System.Drawing.Color.Brown;
+            this.teacher.FlatAppearance.MouseDownBackColor = System.Drawing.Color.AliceBlue;
+            this.teacher.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lavender;
+            this.teacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.teacher.Font = new System.Drawing.Font("Cambria", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teacher.ForeColor = System.Drawing.Color.Brown;
+            this.teacher.Location = new System.Drawing.Point(309, 442);
+            this.teacher.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.teacher.Name = "teacher";
+            this.teacher.Size = new System.Drawing.Size(219, 52);
+            this.teacher.TabIndex = 5;
+            this.teacher.Text = "Teacher";
+            this.teacher.UseVisualStyleBackColor = false;
+            this.teacher.Click += new System.EventHandler(this.teacher_Click);
             // 
-            // label2
+            // admin
             // 
-            this.label2.Location = new System.Drawing.Point(245, 106);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Username :";
+            this.admin.BackColor = System.Drawing.Color.Transparent;
+            this.admin.FlatAppearance.BorderSize = 0;
+            this.admin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.admin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.admin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin.ForeColor = System.Drawing.Color.Silver;
+            this.admin.Location = new System.Drawing.Point(84, 340);
+            this.admin.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.admin.Name = "admin";
+            this.admin.Size = new System.Drawing.Size(92, 34);
+            this.admin.TabIndex = 6;
+            this.admin.Text = "Admin";
+            this.admin.UseVisualStyleBackColor = false;
+            this.admin.Click += new System.EventHandler(this.admin_Click);
             // 
-            // label3
+            // code
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(245, 132);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Password :";
+            this.code.AutoSize = true;
+            this.code.BackColor = System.Drawing.Color.Transparent;
+            this.code.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.code.Font = new System.Drawing.Font("Gabriola", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.code.ForeColor = System.Drawing.Color.DimGray;
+            this.code.Location = new System.Drawing.Point(379, -22);
+            this.code.Name = "code";
+            this.code.Size = new System.Drawing.Size(503, 147);
+            this.code.TabIndex = 7;
+            this.code.Text = "Code  Academy ...";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 368);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.password);
-            this.Controls.Add(this.username);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(898, 502);
+            this.Controls.Add(this.code);
+            this.Controls.Add(this.admin);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.teacher);
+            this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
+       
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox username;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button admin;
+        private System.Windows.Forms.Button teacher;
+        private System.Windows.Forms.Label code;
     }
 }
 
